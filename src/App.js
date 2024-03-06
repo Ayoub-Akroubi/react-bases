@@ -1,23 +1,25 @@
 import logo from './logo.svg';
-import './App.css';
+import Count from './Count/Count';
+import Form from './Form/Form';
+import Fruits from './Fruits/Fruits';
+import FormsState from './FormsWithState/FormsState';
+import Page from './LangagueSwitcher/Page';
+import FormValidation from './FormValidation/FormValidation';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import MainRoutes  from './Routes/MainRoutes';
+import MainContext from './ContextApi/MainContext';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <Form></Form> */}
+      {/* <Fruits fruits= {["appel, banane"]}></Fruits> */}
+      {/* <FormsState></FormsState> */}
+      {/* <Page></Page> */}
+      {/* <FormValidation></FormValidation> */}
+      {/* <MainRoutes></MainRoutes> */}
+      <MainContext></MainContext>
     </div>
   );
 }
